@@ -1,0 +1,30 @@
+{
+  "name": "mon-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.1.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w  dist/scss/style.scss -o dist/css ",
+    "concat": "concat -o dist/css/concat.css  dist/css/style.css",
+    "prefix": "postcss dist/css/concat.css --use autoprefixer  --map=false -o dist/css/prefix.css",
+    "compress": "node-sass dist/css/prefix.css dist/css/style.css  --output-style compressed",
+    "build": "npm-run-all concat prefix compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khadijaezzayany/Mon-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khadijaezzayany/Mon-Portfolio/issues"
+  },
+  "homepage": "https://github.com/khadijaezzayany/Mon-Portfolio#readme"
+}
