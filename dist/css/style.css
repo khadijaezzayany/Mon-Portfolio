@@ -1,2 +1,88 @@
-.header {
-  background-image: linear-gradient(red, yellow); }
+.header #nu {
+  float: right; }
+
+.header__nav--logo {
+  width: 50px;
+  height: 50px;
+  margin: 0.5% auto auto 2%; }
+
+.header__nav ul {
+  list-style-type: none;
+  float: right;
+  display: inline-flex; }
+
+.header__nav li {
+  line-height: 40px;
+  margin-right: 50px;
+  padding-left: 10px; }
+  .header__nav li a {
+    color: black;
+    text-decoration: none; }
+  .header__nav li a:hover {
+    color: #EC407A;
+    transition: all 0.3s; }
+
+body {
+  width: 100%; }
+
+.about__container {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .about__container--left {
+    grid-columns: 1; }
+
+.portfolio {
+  padding-top: 50px;
+  text-align: center; }
+  .portfolio__card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px; }
+    .portfolio__card--left img {
+      width: 80%;
+      height: 85%; }
+    .portfolio__card--right {
+      width: 50%;
+      height: 50%;
+      text-align: initial;
+      margin-top: 6%;
+      line-height: 1.5; }
+      .portfolio__card--right h1 {
+        color: #EC407A; }
+      .portfolio__card--right .projects {
+        text-decoration: none; }
+        .portfolio__card--right .projects__github {
+          text-decoration: none;
+          color: black; }
+        .portfolio__card--right .projects__website {
+          display: block;
+          text-decoration: none;
+          border: #EC407A 2px solid;
+          width: 100px;
+          padding: 3px;
+          margin-top: 10px;
+          text-align: center;
+          border-radius: 30px;
+          color: #EC407A; }
+  .portfolio__h1 {
+    color: #EC407A;
+    font-size: 35px;
+    font-weight: 800; }
+  .portfolio__p {
+    font-size: 20 px; }
+  .portfolio p::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #EC407A;
+    top: 202%;
+    right: 36%; }
+  .portfolio p::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #EC407A;
+    top: 202%;
+    right: 60%; }
