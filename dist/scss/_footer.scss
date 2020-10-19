@@ -1,4 +1,5 @@
 .footer{
+    display: grid;
     h1{
         color: $primarycolor;
         span{
@@ -6,21 +7,35 @@
             padding-left: 20px;
         }
     }
-    a{
-        display: block;
-        text-decoration: none;
-    }
-    ul{
-        list-style: none;
-        li{
-            display: inline-block;
-            float: right;
-        }
+
+    &__contact{
+        grid-column: 1;
+
         a{
+            display: block;
             text-decoration: none;
-            padding-left: 30px;
+            color: $primarycolor;
         }
     }
+
+  
+    &__menu{
+        grid-column: 2;
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                float: right;
+            }
+            a{
+                text-decoration: none;
+                padding-left: 30px;
+                color: black;
+                padding-bottom: 15%;
+            }
+        }
+    }
+  
 }
 .copyright{
    text-align: center;

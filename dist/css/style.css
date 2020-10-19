@@ -161,24 +161,31 @@
   .work img {
     width: 6%; }
 
-.footer h1 {
-  color: #FD7E14; }
-  .footer h1 span {
-    color: black;
-    padding-left: 20px; }
-
-.footer a {
-  display: block;
-  text-decoration: none; }
-
-.footer ul {
-  list-style: none; }
-  .footer ul li {
-    display: inline-block;
-    float: right; }
-  .footer ul a {
-    text-decoration: none;
-    padding-left: 30px; }
+.footer {
+  display: grid; }
+  .footer h1 {
+    color: #FD7E14; }
+    .footer h1 span {
+      color: black;
+      padding-left: 20px; }
+  .footer__contact {
+    grid-column: 1; }
+    .footer__contact a {
+      display: block;
+      text-decoration: none;
+      color: #FD7E14; }
+  .footer__menu {
+    grid-column: 2; }
+    .footer__menu ul {
+      list-style: none; }
+      .footer__menu ul li {
+        display: inline-block;
+        float: right; }
+      .footer__menu ul a {
+        text-decoration: none;
+        padding-left: 30px;
+        color: black;
+        padding-bottom: 15%; }
 
 .copyright {
   text-align: center; }
