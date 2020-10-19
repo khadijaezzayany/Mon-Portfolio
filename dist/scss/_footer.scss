@@ -1,0 +1,31 @@
+.footer{
+    h1{
+        color: $primarycolor;
+        span{
+            color: black;
+            padding-left: 20px;
+        }
+    }
+    a{
+        display: block;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            float: right;
+        }
+        a{
+            text-decoration: none;
+            padding-left: 30px;
+        }
+    }
+}
+.copyright{
+   text-align: center;
+   hr{
+       width: 90%;
+       color: $colorpara;
+   } 
+}
