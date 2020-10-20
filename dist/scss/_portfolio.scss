@@ -1,6 +1,5 @@
 .portfolio {
     padding-top: 50px;
-    text-align: center;
 
 
     &__card {
@@ -64,30 +63,7 @@
         font-weight: 800;
     }
 
-    &__p {
-        font-size: 20 px;
-    }
-
-    p::before {
-        position: absolute;
-        content: "";
-        width: 60px;
-        height: 3px;
-        background: #EC407A;
-        top: 202%;
-        right: 36%;
-
-    }
-
-    p::after {
-        position: absolute;
-        content: "";
-        width: 60px;
-        height: 3px;
-        background: #EC407A;
-        top: 202%;
-        right: 60%;
-    }
+    
 
 
 }

@@ -1,36 +1,76 @@
 .contact{
-    background-image: url(../img/cont1.png);
+    background-image: url(../img/11.png);
     display:grid;
     grid-template-columns: 1fr 1fr;
+    background-size: cover;
+    padding-top: 5%;
 
     &__left{
         grid-column: 1;
+        margin: 10%;
+        &--icon{
+            line-height: 180%;
+            a{
+                color: black;
+                text-decoration: none;
+                padding-left: 10px
+            }
+        }
+        &--p{
+            font-size: 20px;
+            line-height: 1.5;
+        }
     }
 
-    .bg{    &__right{
-        grid-column: 2;
-        background-color: white;
-        text-align: center;
+    
+    &__right{
+         background-color: $primarycolor;
+         height: 5%;
+         border-top-left-radius: 5px;
+         &--h1{
+             color: $primarycolor;
+             padding-top: 4%;
+         }
+          &--container{
+              
+             grid-column: 2;
+             background-color: white;
+             text-align: center;
+
+             form{
+                 display: flex;
+                 flex-direction: column;
+
+                 input[type="text"],
+                 input[type="email"],
+                 textarea{
+                      text-align: center;
+                      padding: 15px 20px;
+                      margin: 10px auto;
+                      width: 70%;
+                      border: none;
+                      border-bottom: 1.5px solid $colorpara;
+
+                        }
+                        input[type="submit" ]{
+                            text-align: center;
+                            width:75%;
+                            display: inline-block;
+                            border: none;
+                            border-radius: 3px;
+                            margin: 10px auto;
+                            background-color: $primarycolor;
+                            color: #fff;
+                            padding: 10px 5px;
+                            margin-top: 25px;
+                        }
+                }
+                    }
+            }
         
-        form{
-            display: flex;
-            flex-direction: column;
-
-            input[type=text],
-            input[type=email],
-            textarea{
-                text-align: center;
-                padding: 15px 20px;
-                // margin: 8% 0;
-                border: none;
-                border-bottom: 1.5px solid $colorpara;
-                     }
-         
-        }
-
+       
         
-        }
 
-    }
-  
+           
+    
 }
