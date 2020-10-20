@@ -123,8 +123,8 @@
 
 .services {
   background-color: #F6F7F9;
-  padding-bottom: 100px;
-  padding-top: 50px; }
+  padding-bottom: 60px;
+  padding-top: 30px; }
   .services__container {
     display: grid;
     grid-template-columns: 30% 34% 33%;
@@ -161,8 +161,33 @@
   .work img {
     width: 6%; }
 
+.contact {
+  background-image: url(../img/cont1.png);
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .contact__left {
+    grid-column: 1; }
+  .contact .bg__right {
+    grid-column: 2;
+    background-color: white;
+    text-align: center; }
+    .contact .bg__right form {
+      display: flex;
+      flex-direction: column; }
+      .contact .bg__right form input[type=text],
+      .contact .bg__right form input[type=email],
+      .contact .bg__right form textarea {
+        text-align: center;
+        padding: 15px 20px;
+        border: none;
+        border-bottom: 1.5px solid #707070; }
+
+body {
+  margin: auto; }
+
 .footer {
-  display: grid; }
+  display: grid;
+  padding-bottom: 1%; }
   .footer h1 {
     color: #FD7E14; }
     .footer h1 span {
@@ -190,5 +215,4 @@
 .copyright {
   text-align: center; }
   .copyright hr {
-    width: 90%;
     color: #707070; }

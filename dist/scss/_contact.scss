@@ -1,0 +1,36 @@
+.contact{
+    background-image: url(../img/cont1.png);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__left{
+        grid-column: 1;
+    }
+
+    .bg{    &__right{
+        grid-column: 2;
+        background-color: white;
+        text-align: center;
+        
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input[type=text],
+            input[type=email],
+            textarea{
+                text-align: center;
+                padding: 15px 20px;
+                // margin: 8% 0;
+                border: none;
+                border-bottom: 1.5px solid $colorpara;
+                     }
+         
+        }
+
+        
+        }
+
+    }
+  
+}
