@@ -23,28 +23,45 @@
     transition: all 0.3s; }
 
 .about h1 {
-  color: #FD7E14; }
+  font-size: 60px;
+  position: relative;
+  margin-left: 268px; }
+
+.about h1::before {
+  position: absolute;
+  content: "";
+  width: 9%;
+  height: 3px;
+  left: -11%;
+  bottom: 33%;
+  bottom: 43Opx;
+  background: #FD7E14; }
 
 .about h1::after {
   position: absolute;
   content: "";
-  width: 60px;
+  width: 65%;
   height: 3px;
-  background: #EC407A;
-  top: 202%;
-  right: 60%; }
+  left: 25%;
+  background: #FD7E14;
+  bottom: 33%; }
 
 .about__container {
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  margin: auto 6%; }
   .about__container--left {
-    grid-columns: 1;
-    width: 350px;
+    grid-column: 1;
+    width: 500px;
     margin: auto; }
     .about__container--left p {
-      color: #707070; }
+      color: #707070;
+      font-size: 20px;
+      line-height: 1.5; }
     .about__container--left ul {
       list-style: none; }
+    .about__container--left .fa {
+      font-size: 25px; }
     .about__container--left li {
       display: inline;
       padding-left: 10px; }
@@ -59,48 +76,92 @@
       padding: 15px 80px;
       transition: all 0.4s; }
   .about__container--right {
-    grid-columns: 2;
-    text-align: center;
-    background-image: url(dist/img/bgkhadija.png); }
-    .about__container--right img {
-      width: 250px; }
+    grid-column: 2;
+    text-align: center; }
 
-.portfolio {
-  padding-top: 50px; }
-  .portfolio__card {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px; }
-    .portfolio__card--left img {
-      width: 80%;
-      height: 85%; }
-    .portfolio__card--right {
-      width: 50%;
-      height: 50%;
-      text-align: initial;
-      margin-top: 6%;
-      line-height: 1.5; }
-      .portfolio__card--right h1 {
-        color: #EC407A; }
-      .portfolio__card--right .projects {
-        text-decoration: none; }
-        .portfolio__card--right .projects__github {
-          text-decoration: none;
-          color: black; }
-        .portfolio__card--right .projects__website {
-          display: block;
-          text-decoration: none;
-          border: #EC407A 2px solid;
-          width: 100px;
-          padding: 3px;
-          margin-top: 10px;
-          text-align: center;
-          border-radius: 30px;
-          color: #EC407A; }
-  .portfolio__h1 {
-    color: #EC407A;
-    font-size: 35px;
-    font-weight: 800; }
+.portfolio h1 {
+  font-size: 60px;
+  position: relative;
+  margin-left: 268px; }
+
+.portfolio h1::before {
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 3px;
+  left: -11%;
+  bottom: 33%;
+  bottom: 43Opx;
+  background: #FD7E14; }
+
+.portfolio h1::after {
+  position: absolute;
+  content: "";
+  width: 66%;
+  height: 3px;
+  left: 23%;
+  background: #FD7E14;
+  bottom: 33%; }
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "ab cd" "ef gh" "ij kl";
+  text-align: center; }
+  .portfolio__container--website {
+    text-decoration: none;
+    color: #1393FD;
+    border: 1px #1393FD solid;
+    border-radius: 15px;
+    padding: 10px initial;
+    margin: 10p;
+    padding: 10px aut;
+    width: 100PX;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    font-size: 20px; }
+  .portfolio__container h2 {
+    font-size: 30px; }
+  .portfolio__container h3 {
+    font-size: 20; }
+  .portfolio__container p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 1.5; }
+  .portfolio__container--github {
+    text-decoration: none;
+    display: block;
+    padding-bottom: 3%;
+    color: black;
+    font-size: 18px; }
+
+.coverProjects {
+  width: 70%;
+  height: 75%; }
+
+.ab {
+  grid-area: ab; }
+
+.cd {
+  grid-area: cd; }
+
+.ef {
+  grid-area: ef; }
+
+.gh {
+  grid-area: gh; }
+
+.ij {
+  grid-area: ij; }
+
+.kl {
+  grid-area: kl; }
+
+.cd, .gh, .kl {
+  text-align: initial;
+  margin-top: 20%; }
 
 .services {
   background-color: #F6F7F9;
@@ -132,29 +193,29 @@
       grid-column: 3; }
       .services__container--friendly img {
         padding-bottom: 15%; }
-  .services h1, .services h2 {
+  .services h2 {
     color: #FD7E14; }
   .services h1 {
     margin-left: 268px;
-    font-size: 65px;
+    font-size: 60px;
     position: relative; }
   .services h1::before {
     position: absolute;
     content: "";
-    width: 6%;
+    width: 8%;
     height: 3px;
     left: -11%;
-    bottom: 40%;
+    bottom: 33%;
     bottom: 43Opx;
-    background: black; }
+    background: #FD7E14; }
   .services h1::after {
     position: absolute;
     content: "";
     width: 66%;
     height: 3px;
     left: 23%;
-    background: black;
-    bottom: 40%; }
+    background: #FD7E14;
+    bottom: 33%; }
   .services p {
     color: #707070; }
 

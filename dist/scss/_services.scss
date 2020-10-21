@@ -41,23 +41,23 @@
         }
     }
     
-    h1, h2{
+    h2{
         color: $primarycolor;
     }
     h1{
         margin-left: 268px;
-        font-size: 65px;
+        font-size: $bigdesk;
         position: relative;
     }
     h1::before{
         position: absolute;
         content: "";
-        width: 6%;
+        width: 8%;
         height: 3px;
         left: -11%;
-        bottom: 40%;
+        bottom: 33%;
         bottom: 43Opx;
-        background: black;
+        background: $primarycolor;
 
     }
     h1::after{
@@ -66,8 +66,8 @@
         width: 66%;
         height: 3px;
         left: 23%;
-        background: black;
-        bottom: 40%;
+        background: $primarycolor;
+        bottom: 33%;
 
     }
     p{

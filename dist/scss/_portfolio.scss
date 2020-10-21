@@ -1,69 +1,167 @@
-.portfolio {
-    padding-top: 50px;
+// .portfolio {
+//     padding-top: 50px;
 
 
-    &__card {
-        display: flex;
-        flex-direction: row;
-        margin-top: 40px;
+//     &__card {
+//         display: flex;
+//         flex-direction: row;
+//         margin-top: 40px;
 
-        &--left {
+//         &--left {
 
-            img {
-                width: 80%;
-                height: 85%;
+//             img {
+//                 width: 80%;
+//                 height: 85%;
 
-            }
-        }
+//             }
+//         }
 
-        &--right {
-            width: 50%;
-            height: 50%;
-            text-align: initial;
-            margin-top: 6%;
-            line-height: 1.5;
-
-
-
-            h1 {
-                color: #EC407A;
-            }
+//         &--right {
+//             width: 50%;
+//             height: 50%;
+//             text-align: initial;
+//             margin-top: 6%;
+//             line-height: 1.5;
 
 
-            .projects {
-                text-decoration: none;
 
-                &__github {
-                    text-decoration: none;
-                    color: black;
-                }
-
-                &__website {
-
-                    display: block;
-                    text-decoration: none;
-                    border: #EC407A 2px solid;
-                    width: 100px;
-                    padding: 3px;
-                    margin-top: 10px;
-                    text-align: center;
-                    border-radius: 30px;
-                    color: #EC407A;
+//             h1 {
+//                 color: #EC407A;
+//             }
 
 
-                }
-            }
+//             .projects {
+//                 text-decoration: none;
 
-        }
-    }
+//                 &__github {
+//                     text-decoration: none;
+//                     color: black;
+//                 }
 
-    &__h1 {
-        color: #EC407A;
-        font-size: 35px;
-        font-weight: 800;
-    }
+//                 &__website {
+
+//                     display: block;
+//                     text-decoration: none;
+//                     border: #EC407A 2px solid;
+//                     width: 100px;
+//                     padding: 3px;
+//                     margin-top: 10px;
+//                     text-align: center;
+//                     border-radius: 30px;
+//                     color: #EC407A;
+
+
+//                 }
+//             }
+
+//         }
+//     }
+
+//     &__h1 {
+//         color: #EC407A;
+//         font-size: 35px;
+//         font-weight: 800;
+//     }
 
     
 
 
+// }
+.portfolio{
+    h1{
+        font-size: $bigdesk;
+        position: relative;
+        margin-left: 268px;
+    }
+    h1::before{
+        position: absolute;
+        content: "";
+        width: 8%;
+        height: 3px;
+        left: -11%;
+        bottom: 33%;
+        bottom: 43Opx;
+        background: $primarycolor;
+    }
+    h1::after{
+        position: absolute;
+        content: "";
+        width: 66%;
+        height: 3px;
+        left: 23%;
+        background: $primarycolor;
+        bottom: 33%;
+    }
+    &__container{display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ab cd"
+        "ef gh"
+        "ij kl";
+        text-align: center;
+        &--website{
+          text-decoration: none;
+          color: $secondcolor;
+          border: 1px $secondcolor solid;
+          border-radius: 15px;
+          padding: 10px initial;
+          margin: 10p;
+          padding: 10px aut;
+          width: 100PX;
+          padding: 3px;
+          display: block;
+          text-align: center;
+          font-size: 20px;
+      
+         
+      }
+      h2{
+          font-size: 30px;
+      }
+      h3{
+          font-size: 20;
+      }
+      p{
+          color: $colorpara;
+          font-size: 20px;
+          line-height: 1.5;
+      
+      }
+      &--github{
+          text-decoration: none;
+          display: block;
+          padding-bottom: 3%;
+          color: black;
+          font-size: 18px;
+      }
+      }}
+  
+
+.coverProjects{
+    width: 70%;
+    height: 75%;
+}
+.ab{
+    grid-area: ab;   
+}
+.cd{
+    grid-area: cd;
+}
+.ef{
+    grid-area: ef;
+}
+.gh{
+    grid-area: gh;
+}
+.ij{
+    grid-area: ij;
+}
+.kl{
+    grid-area: kl;
+
+}
+.cd, .gh, .kl{
+    text-align: initial;
+    margin-top: 20%;
 }
