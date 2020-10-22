@@ -1,0 +1,44 @@
+.header{
+    background-image: url(../img/bgg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 14%;
+    background-attachment: fixed;
+
+    &__section{
+        padding-left: 50%;
+        text-align: center;
+        padding-top: 10%;
+    }
+    h1{
+        font-size: $bigdesk;
+        color: $primarycolor;
+    }
+    p{
+        font-size: 25px;
+        line-height: 1.5;
+        img{
+            width: 20px;
+           position: relative;
+
+
+        }
+    }
+    #butwork{
+        text-decoration: none;
+        font-size: 25px;
+        line-height: 5;
+        padding: 15px 110px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    #top{
+    bottom: 12px;
+    right: 12px;
+    }
+    #bot{
+        top: 12px;
+        left: 12px;
+        transform: rotate(180deg);}
+}

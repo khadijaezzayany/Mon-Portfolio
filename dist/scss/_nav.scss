@@ -1,8 +1,8 @@
 .header{
-    background-image: url(/dist/img/bgdesk.png);
-    #nu{
-        float:right;
-    }
+   
+    // #nu{
+    //     // float:right;
+    // // }
       &__nav {
 
 
@@ -10,19 +10,21 @@
             width: 50px;
             height: 50px;
             margin: 0.5% auto auto 2%;
+            padding-left: 12%;
+            text-align: center;
         }
-
+    }
         ul {
             list-style-type: none;
-            float: right;
+            // float: right;
             display: inline-flex;
             // display: inline-block;
 
         }
 
         li {
-            line-height: 40px;
-            margin-right: 50px;
+            // line-height: 40px;
+            margin-right: 40px;
             padding-left: 10px;
 
             a {
@@ -36,7 +38,21 @@
             }
 
         }
+        #butlets{
+            margin-left: 11%;
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 10px 20px;
+            color: black;
+        }
+        #butlets:hover{
+            color: black;
+            background-color: $primarycolor;
+            border: none;
+        }
+        #num{
+            margin-left: 13%;
+        }
 
 
     }
-}
