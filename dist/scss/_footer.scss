@@ -6,6 +6,7 @@ body{
     // width: 90%;
     display: grid;
     padding-bottom: 1%;
+    margin: auto 3%;
     h1{
         color: $primarycolor;
         span{
@@ -45,6 +46,7 @@ body{
 }
 .copyright{
    text-align: center;
+   margin: auto 3%;
    hr{
        color: $colorpara;
        

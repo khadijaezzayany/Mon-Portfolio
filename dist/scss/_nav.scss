@@ -17,6 +17,7 @@
         ul {
             list-style-type: none;
             // float: right;
+            margin-left: 1%;
             display: inline-flex;
             // display: inline-block;
 
@@ -51,7 +52,12 @@
             border: none;
         }
         #num{
-            margin-left: 13%;
+            
+                margin-left: 13%;
+                color: black;
+                text-decoration: none;
+            
+           
         }
 
 

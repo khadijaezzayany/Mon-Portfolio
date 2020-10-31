@@ -12,19 +12,19 @@
 
 <body>
     <!--------------------------------Header------------------------------>
-    <div class="header">
+    <div class="header" id="home">
         <div class="header__nav">
           
 
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href=""> ABOUT ME</a></li>
-                <li><a href=""> SERVICES</a></li>
-                <li><a href=""> PORTFOLIO</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about"> ABOUT ME</a></li>
+                <li><a href="#services"> SERVICES</a></li>
+                <li><a href="#portfolio"> PORTFOLIO</a></li>
             </ul>
-            <img class="header__nav--logo" src="dist/img/logo1.svg" alt="">
-            <a id="num">06-89476970</a>
-            <a id="butlets" href="">LET'S TALK</a>
+           <a href="#home"><img class="header__nav--logo" src="dist/img/logo1.svg" alt=""></a> 
+            <a id="num" href="tel:+212 689476970" >06-89476970</a>
+            <a id="butlets" href="#contact">LET'S TALK</a>
            
         </div>
         <div class=" header__section" id="section">
@@ -50,7 +50,7 @@
 
 
     <!--------------------------------About------------------------------>
-    <div class="about">
+    <div class="about" id="about">
 
 
         <h1 class="about__h1"> About Me</h1>
@@ -64,10 +64,10 @@
                     at working with others to achieve a certain objective on time and with excellence.
                 </p>
                 <ul>
-                    <li> <i class="fa fa-envelope" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                    <li> <i class="fa fa-github" aria-hidden="true"></i></li>
+                    <li> <a href="mailto:kezzayany@gmail.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="tel:+212 689476970"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/khadija-ezzayany-3a2b3a1a7/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://github.com/khadijaezzayany"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 </ul>
 
                 <a href="" class="about__container--left but">Download CV</a>
@@ -85,7 +85,7 @@
 
     <!--------------------------------Portfolio------------------------------>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h1 class="portfolio__h1"> Potfolio</h1>
 
         <div class="portfolio__container">
@@ -141,7 +141,7 @@
     <!--------------------------------Services------------------------------>
 
 
-    <div class="services">
+    <div class="services" id="services">
         <h1>Services</h1>
         <div class="services__container">
             <div class="services__container--dev">
@@ -195,7 +195,7 @@
     <!--------------------------------Fin Work------------------------------>
 
     <!--------------------------------Contact------------------------------>
-    <div class=" contact">
+    <div class=" contact" id="contact">
         <div class="contact__left">
             <p class="contact__left--p">Interested in working together? <br>
                 Feel free to contact me for any <br> project or collaboration.</p>

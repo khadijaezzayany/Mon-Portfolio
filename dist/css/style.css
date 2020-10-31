@@ -42,6 +42,7 @@
 
 .header ul {
   list-style-type: none;
+  margin-left: 1%;
   display: inline-flex; }
 
 .header li {
@@ -67,7 +68,9 @@
   border: none; }
 
 .header #num {
-  margin-left: 13%; }
+  margin-left: 13%;
+  color: black;
+  text-decoration: none; }
 
 .about h1 {
   font-size: 60px;
@@ -106,9 +109,11 @@
       font-size: 20px;
       line-height: 1.5; }
     .about__container--left ul {
-      list-style: none; }
+      list-style: none;
+      margin-left: -50px; }
     .about__container--left .fa {
-      font-size: 25px; }
+      font-size: 25px;
+      color: black; }
     .about__container--left li {
       display: inline;
       padding-left: 10px; }
@@ -328,7 +333,8 @@ body {
 
 .footer {
   display: grid;
-  padding-bottom: 1%; }
+  padding-bottom: 1%;
+  margin: auto 3%; }
   .footer h1 {
     color: #FD7E14; }
     .footer h1 span {
@@ -354,6 +360,7 @@ body {
         padding-bottom: 15%; }
 
 .copyright {
-  text-align: center; }
+  text-align: center;
+  margin: auto 3%; }
   .copyright hr {
     color: #707070; }
